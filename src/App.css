@@ -41,6 +41,7 @@ span:hover {
 .crossed-out {
   text-decoration: line-through;
   color: #888;
+  pointer-events: none;
 }
 
 .solution span {
