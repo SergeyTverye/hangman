@@ -1,38 +1,78 @@
-.App {
+body {
+  font-family: 'Trebuchet MS', sans-serif;
+  background-color: #2a2a2a;
+  color: #eaeaea;
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.high-score, .medium-score, .low-score {
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.high-score {
+  color: green;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.medium-score {
+  color: yellow;
 }
 
-.App-link {
-  color: #61dafb;
+.low-score {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  cursor: pointer;
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+span:hover {
+  background-color: #444;
+  transform: scale(1.1);
+}
+
+.crossed-out {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.solution span {
+  color: #eaeaea;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: default;
+  border: none;
+  background-color: transparent;
+  transform: none !important;
+}
+
+.solution span:hover {
+  background-color: transparent;
+  transform: none;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #666;
 }
